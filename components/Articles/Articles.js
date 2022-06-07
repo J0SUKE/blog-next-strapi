@@ -7,18 +7,18 @@ export default function Articles({articles}) {
     <div>
       <main className={styles.main}>
         {
-          articles?.map(({id,attributes:{title,content,illustration,author,slug}})=>
+          articles?.map(({id,attributes:{title,illustration,author,slug}})=>
           {
             
             let imgUrl = `${process.env.NEXT_PUBLIC_STRAPI_API_URL || "http://localhost:1337"}${illustration.data?.attributes.url}`;
             
             return <>
-                        <ArticleView 
-                            imgUrl={imgUrl} 
-                            slug={slug} 
-                            author={author.data.attributes.username}
-                            title={title}
-                        />
+                      <ArticleView 
+                          imgUrl={imgUrl} 
+                          slug={slug} 
+                          author={author.data.attributes.username}
+                          title={title}
+                      />
                     </>
           })
         }
