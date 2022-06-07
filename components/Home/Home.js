@@ -9,7 +9,7 @@ export default function Home() {
           <h1>Bienvenu sur mon blog !</h1>
         </div>
         <div className={styles.hero__right}>
-          <p>Salut moi c'est Jean ! développeur Web Front-End . Sur ce blog je vais poster des articles en lien avec le développement web (et peut-être d'autres sujets) , le but est surtout de m'exercer sur des technos comme Strapi et NextJS donc je me suis dit que ça pourrait être instructif de créer un blog !</p>
+          <p>Salut moi c&apos;est Jean ! développeur Web Front-End . Sur ce blog je vais poster des articles en lien avec le développement web (et peut-être d&apos;autres sujets) , le but est surtout de m&apos;exercer sur des technos comme Strapi et NextJS donc je me suis dit que ça pourrait être instructif de créer un blog !</p>
           <button className={styles.exploreBtn}><Link href={'/articles'}><a>Explorer</a></Link></button>
         </div>
         
