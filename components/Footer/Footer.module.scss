@@ -1,0 +1,22 @@
+.footer_container
+{
+    background: black;
+    //margin-top: 3rem;
+}
+
+.footer
+{
+    height: 400px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__logo
+    {
+        width: 100px;
+        img{
+            width: 100%;
+        }
+    }
+}
