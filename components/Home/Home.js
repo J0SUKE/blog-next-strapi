@@ -36,7 +36,7 @@ export default function Home({about}) {
                     <img src={getStrapiMedia(about.attributes.image)} alt="" />
                   </div>
                   <div className={styles.presesntation__text}>
-                    <h2></h2>
+                    <h2>{about.attributes.title}</h2>
                     <p>{about.attributes.content}</p>
                     <button>
                       <Link href='/blog'>

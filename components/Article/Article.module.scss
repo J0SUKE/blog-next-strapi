@@ -20,19 +20,42 @@
     max-width: 700px;
     margin: auto;
     padding-top: 60px;
-    img{
-        max-width: 300px;
-        height: auto;
-        display: block;
-        margin: 2rem 0;
-        &.illustration
-        {
+    .illustration
+    {
+        width: 100%;
+        max-width: unset;
+        max-height: 300px;
+        object-fit: cover;
+        margin-bottom: 3rem;
+
+    }
+
+    article{
+        h1{
+            color: black;
+            font-size: 2.1rem;
+        }
+        li{
+            font-size: 1.2rem;
+        }
+        a{
+            color: crimson;
+        }
+        code{
+            display: block;
+            border-radius: 5px;
+            background:rgb(38, 38, 38);
+            margin: 1rem 0;
+            padding: 1rem .5rem;
+            color: white;
+        }
+        h2{
+            margin: 2rem 0;
+        }
+        img{
             width: 100%;
-            max-width: unset;
-            max-height: 300px;
-            object-fit: cover;
-            margin-bottom: 3rem;
-    
+            display: block;
+            margin: 2rem 0;
         }
     }
 
