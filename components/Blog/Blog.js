@@ -43,11 +43,9 @@ function GalleryColumn({articles}) {
                     </Moment>
                     </span>
                     <h2>{attributes.title}</h2>
-                    <p>
-                      <ReactMarkdown skipHtml={false} rehypePlugins={[rehypeRaw]} >
+                    <ReactMarkdown skipHtml={false} rehypePlugins={[rehypeRaw]} >
                         {`${attributes.content.substring(0, 200)}...`}
-                      </ReactMarkdown>                      
-                    </p>
+                      </ReactMarkdown>       
                   </div>
                 </li>
               </a>

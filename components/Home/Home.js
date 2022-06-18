@@ -1,12 +1,13 @@
 import Header from '../Header/Header';
 import styles from './Home.module.scss';
 import Link from 'next/link';
+import {getStrapiMedia} from '../../lib/media';
 
 import Typewriter from 'typewriter-effect';
 
 
-export default function Home() {
-  
+export default function Home({about}) {
+  console.log(about);
 
   return (
     <>
@@ -32,17 +33,14 @@ export default function Home() {
             <section className={styles.content}>
                 <div className={styles.presesntation}>
                   <div className={styles.presesntation__img}>
-                    <img src="https://jean-mazouni-portfolio-2022.s3.eu-west-3.amazonaws.com/presentation_6d4e8dbb3f.png" alt="" />
+                    <img src={getStrapiMedia(about.attributes.image)} alt="" />
                   </div>
                   <div className={styles.presesntation__text}>
-                    <h2>Salut !</h2>
-                    <p>
-                      Moi c'est Jean , Un developpeur freelance de 21 ans basé à Lyon, passioné par les technologies du web et particulierement les technos orientées Front-End , j'ai crée ce blog dans le but de parteger mes connaissances et mes projets !
-                      
-                    </p>
+                    <h2></h2>
+                    <p>{about.attributes.content}</p>
                     <button>
                       <Link href='/blog'>
-                        <a>Explore</a>
+                        <a>Explorer</a>
                       </Link>
                     </button>
                   </div>

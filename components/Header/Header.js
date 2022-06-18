@@ -13,15 +13,9 @@ export default function Header({scrollbarWidth}) {
               </div>
             </Link>
             <ul>
-              <li>
-                <a href="">My page</a>
-              </li>
-              <li>
-                <a href="">Blog</a>
-              </li>
-              <li>
-                <a href="">Contact</a>
-              </li>
+                <li><a href='https://jeanmazouni.com/' target='_blank' rel='noreferrer'>Mon portfolio</a></li>
+                <li><Link href='/blog'><a>Blog</a></Link></li>
+                <li><Link href='/contact'><a>Contact</a></Link></li>
             </ul>
         </div>
     </header>

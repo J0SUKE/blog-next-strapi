@@ -19,6 +19,7 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 40px;
+    padding-bottom: 3rem;
     li{
         border: 1px solid lightgray;
         display: inline-block;

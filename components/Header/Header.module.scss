@@ -33,5 +33,8 @@
         {
             width: 30px;
         }
+        @media screen and(max-width:520px) {
+            p,img{display: none;}
+        }
     }
 }

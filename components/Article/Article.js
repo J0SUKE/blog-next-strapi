@@ -43,8 +43,19 @@ export default function Article({articles}) {
           </Link>
         </ul>
         <section className={styles.other}>
-          <OtherArticle article={articles[1]}/>
-          <OtherArticle article={articles[2]}/>
+          {
+            articles.length ==3 ?
+              <>
+                <OtherArticle article={articles[1]}/>
+                <OtherArticle article={articles[2]}/>
+              </>
+            :
+            articles.length ==2 ?
+            <OtherArticle article={articles[1]}/>
+            :
+            null
+          }
+          
         </section>
       </section>
   </BlogLayout>
